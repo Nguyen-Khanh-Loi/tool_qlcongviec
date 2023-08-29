@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+/* Phân trang */
+.dataTables_paginate .paginate_button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-left: -1px;
+}
+
+.dataTables_paginate .paginate_button.active {
+  z-index: 3;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.dataTables_paginate .paginate_button.disabled {
+  cursor: default;
+  color: #777;
+  background-color: #fff;
+  border-color: #ddd;
+}
+
+.dataTables_paginate select {
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.dataTables_paginate .previous {
+  margin-right: 5px;
+}
+
+.dataTables_paginate .current {
+  border: none;
+  background: #252b3b !important;
+  color: #fff;
+}
+
+.dataTables_paginate .current:hover {
+  background: #4b5a83;
+  color: #fff;
+}
+
+.dataTables_paginate .next {
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+/* Thanh search */
+.dataTables_filter {
+  margin-bottom: 10px;
+}
+
+.dataTables_filter label {
+  font-weight: normal;
+}
+
+.dataTables_filter input[type=search] {
+  width: 100%;
+  height: 35px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.dataTables_filter input[type=search]:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.dataTables_wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.dataTables_wrapper .dataTables_scrollBody table {
+  width: 100% !important;
+}
+
+.all_permissions tbody td:nth-child(4),
+.all_permissions tbody td:nth-child(5) {
+  text-align: center;
+}
+
+.all_roles tbody td:nth-child(5),
+.all_roles tbody td:nth-child(6) {
+  text-align: center;
+}
+
+.all_word tbody td:nth-child(2),
+.all_word tbody td:nth-child(7) {
+  text-align: center;
+}
+
+.all_languages tbody td:last-child {
+  text-align: center;
+}
+
+.all_languages tbody td:nth-child(4),
+.all_languages tbody td:nth-child(5) {
+  text-align: center;
+}
+
+.all_word tbody td {
+  text-align: center;
+}
+
+.all_word tbody td:nth-child(1) {
+  text-align: left;
+}
+
+.all_word tbody .td_space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.all_languages tbody input[type=checkbox],
+.all_word tbody input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.all_languages tbody label,
+.all_word tbody label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 60px;
+  height: 25px;
+  background: #508023;
+  border-radius: 100px;
+  position: relative;
+  margin-bottom: 0;
+  margin-right: 0 !important;
+}
+
+.all_languages tbody label:after,
+.all_word tbody label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border: 1px solid grey;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.all_languages tbody input:checked+label,
+.all_word tbody input:checked+label {
+  background: grey;
+}
+
+.all_languages tbody input:checked+label:after,
+.all_word tbody input:checked+label:after {
+  right: 100%;
+  transform: translateX(100%);
+}
+
+.all_languages tbody label:active:after,
+.all_word tbody label:active:after {
+  width: 30px;
+}
+
+.user_manager tbody input[type=checkbox],
+.all_languages tbody input[type=checkbox],
+.log_import tbody input[type=checkbox],
+.all_word tbody input[type=checkbox],
+.all_roles tbody input[type=checkbox],
+.all_permissions tbody input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.user_manager tbody label,
+.all_languages tbody label,
+.log_import tbody label,
+.all_word tbody label,
+.all_roles tbody label,
+.all_permissions tbody label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 60px;
+  height: 25px;
+  background: #508023;
+  border-radius: 100px;
+  position: relative;
+  margin-bottom: 0;
+  margin-right: 0 !important;
+}
+
+.user_manager tbody label:after,
+.all_languages tbody label:after,
+.log_import tbody label:after,
+.all_word tbody label:after,
+.all_roles tbody label:after,
+.all_permissions tbody label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border: 1px solid grey;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.user_manager tbody input:checked+label,
+.all_languages tbody input:checked+label,
+.log_import tbody input:checked+label,
+.all_word tbody input:checked+label,
+.all_roles tbody input:checked+label,
+.all_permissions tbody input:checked+label {
+  background: grey;
+}
+
+.user_manager tbody input:checked+label:after,
+.all_languages tbody input:checked+label:after,
+.log_import tbody input:checked+label:after,
+.all_word tbody input:checked+label:after,
+.all_roles tbody input:checked+label:after,
+.all_permissions tbody input:checked+label:after {
+  right: 100%;
+  transform: translateX(100%);
+}
+
+.user_manager tbody label:active:after,
+.all_languages tbody label:active:after,
+.log_import tbody label:active:after,
+.all_word tbody label:active:after,
+.all_roles tbody label:active:after,
+.all_permissions tbody label:active:after {
+  width: 30px;
+}
+
+.user_manager tbody td,
+.all_languages tbody td,
+.log_import tbody td,
+.all_word tbody td,
+.all_roles tbody td,
+.all_permissions tbody td {
+  vertical-align: middle;
+  max-width: 300px;
+  height: 100%;
+}

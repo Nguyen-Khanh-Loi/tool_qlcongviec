@@ -1,0 +1,11 @@
+import { mapActions, mapGetters } from "vuex";
+export const taskMethods = mapActions(['createNewTask', 'getListTasks', 'updateTask', 'getCurrentTask', 'createWorkTodo', 'removeWorkTodo', 'addCheckList', 'removeCheckList', 'uploadFile', 'removeFilesMedia', 'getListMyTasks', 'getListUsersInProject']);
+export const taskGetters = mapGetters(['listUsers', 'currentTask', 'listTasks', 'listCard', 'taskDraggableStore', 'listTaskDraggable', 'projectUsers', 'listItemLabels', 'projectInfo', 'myTasks', 'listCardsInMyTasks']);
+export const authMethods = mapActions(['auth', 'logout', 'department', 'notifications', 'getListUserProjectManager']);
+export const authGetters = mapGetters(['authUserData', 'departmentId', 'dataNotifications']);
+export const projectMethods = mapActions(['addRemoveUserInProject', 'getProjects', 'createProject', 'getProject', 'updateProject', 'getProjectSiderBar', 'addTitleProject', 'addBreadcrumbProject', 'addCurrentProject', 'departmentInProject']);
+export const projectGetters = mapGetters(['listProjects', 'projectData', 'currentProject', 'paginateProject', 'totalPageProject', 'projectSiderBar', 'titleProject', 'breadcrumbProject', 'dataChartProject']);
+export const socketMethods = mapActions(['connect', 'disconnect', 'joinUser', 'joinRoom', 'onEventChat', 'onListenChat', 'addDataMessenger']);
+export const socketGetters = mapGetters(['listMessengers']);
+export const codesMethods = mapActions(['getAllCodes']);
+export const codesGetters = mapGetters(['allCodes']);

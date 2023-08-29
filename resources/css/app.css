@@ -1,0 +1,25 @@
+.profile .form-group .label-item::before {
+    content: "*";
+    color: #ff4949;
+    margin-right: 4px;
+}
+
+.profile .background-avatar {
+    height: 130px;
+}
+
+.profile .avatar {
+    top: 70px;
+}
+
+.profile .avatar img {
+    width: 120px;
+}
+
+.profile .description-profile {
+    padding-top: 100px;
+}
+
+.profile-card-body {
+    min-height: 400px !important;
+}
